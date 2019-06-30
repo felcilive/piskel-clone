@@ -1,3 +1,3 @@
 # piskel-clone
 
-# https://felcilive.github.io/piskel/index
+# https://felcilive.github.io/piskel-clone/index
