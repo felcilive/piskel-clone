@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <title>Document</title>
+  <link href="style.css?858ffb8b99b7ca50b1af" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div>
+        <i class="fas fa-bars"></i>
+        <h1>Piskel-clone</h1>
+      </div>
+      <i class="fas fa-ellipsis-v"></i>
+    </header>
+
+    <main>
+      <div class="settings">
+        <div class="size-canvas">
+          <i id="first-size">32x32</i>
+          <i id="second-size">64x64</i>
+          <i id="third-size">128x128</i>
+        </div>
+
+        <div class="palette">
+          <button id="pen">
+            <i class="fas fa-pencil-alt" id="pen-child"></i>
+            <p class="pen">
+              <span>Pen</span>
+              <span>(P)</span>
+            </p>
+          </button>
+
+          <button id="pen-ruler">
+            <i class="fas fa-pencil-ruler" id="pen-ruler-child"></i>
+            <p class="pen-ruler">
+              <span>Stroke tool</span>
+              <span>(L)</span>
+            </p>
+          </button>
+
+          <button id="circle">
+            <i class="far fa-circle" id="circle-child"></i>
+            <p class="circle">
+              <span>Circle tool</span>
+              <span>(C)</span>
+            </p>
+          </button>
+
+          <button id="rectangle">
+            <i class="far fa-square" id="rectangle-child"></i>
+            <p class="rectangle">
+              <span>Rectangle tool</span>
+              <span>(R)</span>
+            </p>
+          </button>
+
+          <button id="paint-bucket">
+            <i class="fas fa-fill-drip" id="paint-bucket-child"></i>
+            <p class="bucket">
+              <span>Paint-bucket tool</span>
+              <span>(B)</span>
+            </p>
+          </button>
+
+          <button id="fill">
+            <i class="fas fa-brush" id="fill-child"></i>
+            <p class="fill">
+              <span>Paint all pixel of the same color</span>
+              <span>(A)</span>
+            </p>
+          </button>
+
+          <button id="eraser">
+            <i class="fas fa-eraser" id="eraser-child"></i>
+            <p class="eraser">
+              <span>Eraser tool</span>
+              <span>(E)</span>
+            </p>
+          </button>
+
+          <button id="lighter">
+            <i class="fas fa-adjust" id="lighter-child"></i>
+            <p class="lighter">
+              <span>Ligten tool</span>
+              <span>(V)</span>
+            </p>
+          </button>
+
+          <button id="dithering">
+            <i class="fas fa-chess-board" id="dithering-child"></i>
+            <p class="dithering">
+              <span>Dithering tool</span>
+              <span>(T)</span>
+            </p>
+          </button>
+          
+          </button>
+          <button id="download">
+            <i class="fas fa-file-download" id="download-child"></i>
+            <p class="download">
+              <span>Download</span>
+              <span>(D)</span>
+            </p>
+          </button>
+        </div>
+        <div class="colors">
+          <button id="prev"><button id="current"></button></button>
+        </div>
+      </div>
+
+      <div class="frames shadow">
+        <div class="old-frame">
+          <div class="frame shadow" id="frame">
+            <button class="far fa-copy" id="copy"></button>
+          </div>
+        </div>
+        <div class="add-new">
+          <button id="add"><i class="fas fa-plus" id="add-child"></i>Add new frame</button>
+        </div>
+      </div>
+
+      <div class="canvas shadow">
+        <canvas id="grid" width="32" height="32">
+          Ваш браузер не поддерживает Canvas
+        </canvas>
+        <canvas id="grid2" width="32" height="32">
+          Ваш браузер не поддерживает Canvas
+        </canvas>
+      </div>
+      <div>
+        <div class="animation shadow ">
+          <div class="view shadow"></div>
+          <div class="speed">
+            <button id="run">RUN</button>
+            <button id="two">2 FPS</button>
+            <button id="four">4 FPS</button>
+            <button id="six">6 FPS</button>
+          </div>
+        </div>
+        <div class="information shadow">
+          <span class="size"></span>
+          <span class="coordinates"></span>
+        </div>
+      </div>
+    </main>
+  <script type="text/javascript" src="app.bundle.js?858ffb8b99b7ca50b1af"></script></body>
+</html>
